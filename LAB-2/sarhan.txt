@@ -1,0 +1,138 @@
+MOV AH, 1      ;input-key function  
+INT 21H        ;ASCII code in AL
+MOV BL,AL  
+
+INT 21H
+MOV BH,AL
+
+INT 21H
+MOV CH,AL
+   
+INT 21H
+MOV CL,AL 
+
+
+MOV AH, 2  
+MOV DL, 10         ;0AH: NEWLINE  
+INT 21H 
+
+
+MOV DL, 13
+INT 21H 
+
+  
+MOV DL, BL     ;character from input stored in AL   
+INT 21H        ;display character 
+MOV DL, 10        
+INT 21H
+MOV DL, 13
+INT 21H 
+                                    
+                                      
+MOV DL, BH     ;character from input stored in AL   
+INT 21H        ;display character  
+MOV DL, 10        
+INT 21H
+MOV DL, 13
+INT 21H
+
+MOV DL, CH     ;character from input stored in AL   
+INT 21H        ;display character
+MOV DL, 10        
+INT 21H
+MOV DL, 13
+INT 21H 
+
+MOV DL, CL     ;character from input stored in AL   
+INT 21H        ;display character
+MOV DL, 10        
+INT 21H
+MOV DL, 13
+INT 21H 
+
+MOV DL, 10        
+INT 21H
+MOV DL, 13
+INT 21H
+
+MOV DL,CL
+INT 21H
+MOV DL, 32
+INT 21H
+
+MOV DL,CH
+INT 21H
+MOV DL,32
+INT 21H 
+
+MOV DL,BH
+INT 21H
+MOV DL,32
+INT 21H 
+
+MOV DL,BL
+INT 21H
+MOV DL,32
+INT 21H 
+
+task-3 AND 4
+
+
+; You may customize this and other start-up templates; 
+; The location of this template is c:\emu8086\inc\0_com_template.txt
+
+org 100h  
+
+                              
+MOV AH, 1      ;input-key function  
+INT 21H        ;ASCII code in AL
+MOV BL,AL  
+
+INT 21H
+MOV BH,AL 
+
+MOV AH, 2  
+MOV DL, 10         ;0AH: NEWLINE  
+INT 21H 
+MOV DL, 13
+INT 21H 
+
+ADD BH,BL 
+SUB BH,30H
+MOV AH, 2  
+MOV DL,BH
+INT 21H  
+
+MOV AH, 2  
+MOV DL, 10         ;0AH: NEWLINE  
+INT 21H 
+MOV DL, 13
+INT 21H 
+
+
+MOV AH, 1      ;input-key function  
+INT 21H        ;ASCII code in AL
+MOV BL,AL  
+
+INT 21H
+MOV BH,AL 
+
+MOV AH, 2  
+MOV DL, 10         ;0AH: NEWLINE  
+INT 21H 
+MOV DL, 13
+INT 21H 
+
+SUB BL,BH 
+ADD BL,30H
+MOV AH, 2  
+MOV DL,BL
+INT 21H 
+
+
+
+ret
+
+
+
+

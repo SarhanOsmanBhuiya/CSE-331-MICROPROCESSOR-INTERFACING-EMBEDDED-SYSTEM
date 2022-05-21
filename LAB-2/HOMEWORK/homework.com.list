@@ -1,0 +1,384 @@
+EMU8086 GENERATED LISTING. MACHINE CODE <- SOURCE.
+ 
+homework.com -- emu8086 assembler version: 4.08  
+ 
+[ 15/10/2019  --  1:49:26 PM ] 
+ 
+===================================================================================================
+[LINE]     LOC: MACHINE CODE                          SOURCE
+===================================================================================================
+ 
+[   1]        :                                       
+[   2]        :                                       ; You may customize this and other start-up templates;
+[   3]        :                                       ; The location of this template is c:\emu8086\inc\0_com_template.txt
+[   4]        :                                       
+[   5]        :                                       org 100h
+[   6]        :                                       
+[   7]    0100: B4 02                                 MOV AH, 2   ;space
+[   8]    0102: B2 20                                 MOV DL, 32
+[   9]    0104: CD 21                                 INT 21H
+[  10]        :                                       
+[  11]    0106: B4 02                                 MOV AH, 2   ;space
+[  12]    0108: B2 20                                 MOV DL, 32
+[  13]    010A: CD 21                                 INT 21H
+[  14]        :                                       
+[  15]    010C: B4 02                                 MOV AH, 2   ;space
+[  16]    010E: B2 20                                 MOV DL, 32
+[  17]    0110: CD 21                                 INT 21H
+[  18]        :                                       
+[  19]    0112: B4 02                                 MOV AH, 2   ;space
+[  20]    0114: B2 20                                 MOV DL, 32
+[  21]    0116: CD 21                                 INT 21H
+[  22]        :                                       
+[  23]    0118: B4 02                                 MOV AH, 2   ;space
+[  24]    011A: B2 20                                 MOV DL, 32
+[  25]    011C: CD 21                                 INT 21H
+[  26]        :                                       
+[  27]    011E: B4 02                                 MOV AH, 2   ;star symbol
+[  28]    0120: B2 2A                                 MOV DL, 42
+[  29]    0122: CD 21                                 INT 21H
+[  30]        :                                       
+[  31]    0124: B4 02                                 MOV AH, 2   ;new line
+[  32]    0126: B2 0A                                 MOV DL, 10
+[  33]    0128: CD 21                                 INT 21H
+[  34]        :                                       
+[  35]    012A: B4 02                                 MOV AH, 2   ;brings pointer to the begining
+[  36]    012C: B2 0D                                 MOV DL, 13
+[  37]    012E: CD 21                                 INT 21H
+[  38]        :                                       
+[  39]    0130: B4 02                                 MOV AH, 2   ;space
+[  40]    0132: B2 20                                 MOV DL, 32
+[  41]    0134: CD 21                                 INT 21H
+[  42]        :                                       
+[  43]    0136: B4 02                                 MOV AH, 2   ;space
+[  44]    0138: B2 20                                 MOV DL, 32
+[  45]    013A: CD 21                                 INT 21H
+[  46]        :                                       
+[  47]    013C: B4 02                                 MOV AH, 2   ;space
+[  48]    013E: B2 20                                 MOV DL, 32
+[  49]    0140: CD 21                                 INT 21H
+[  50]        :                                       
+[  51]    0142: B4 02                                 MOV AH, 2   ;space
+[  52]    0144: B2 20                                 MOV DL, 32
+[  53]    0146: CD 21                                 INT 21H
+[  54]        :                                       
+[  55]    0148: B4 02                                 MOV AH, 2   ;star symbol
+[  56]    014A: B2 2A                                 MOV DL, 42
+[  57]    014C: CD 21                                 INT 21H
+[  58]        :                                       
+[  59]    014E: B4 02                                 MOV AH, 2   ;space
+[  60]    0150: B2 20                                 MOV DL, 32
+[  61]    0152: CD 21                                 INT 21H
+[  62]        :                                       
+[  63]    0154: B4 02                                 MOV AH, 2   ;star symbol
+[  64]    0156: B2 2A                                 MOV DL, 42
+[  65]    0158: CD 21                                 INT 21H
+[  66]        :                                       
+[  67]    015A: B4 02                                 MOV AH, 2   ;new line
+[  68]    015C: B2 0A                                 MOV DL, 10
+[  69]    015E: CD 21                                 INT 21H
+[  70]        :                                       
+[  71]    0160: B4 02                                 MOV AH, 2   ;brings pointer to the begining
+[  72]    0162: B2 0D                                 MOV DL, 13
+[  73]    0164: CD 21                                 INT 21H
+[  74]        :                                       
+[  75]    0166: B4 02                                 MOV AH, 2   ;space
+[  76]    0168: B2 20                                 MOV DL, 32
+[  77]    016A: CD 21                                 INT 21H
+[  78]        :                                       
+[  79]    016C: B4 02                                 MOV AH, 2   ;space
+[  80]    016E: B2 20                                 MOV DL, 32
+[  81]    0170: CD 21                                 INT 21H
+[  82]        :                                       
+[  83]    0172: B4 02                                 MOV AH, 2   ;space
+[  84]    0174: B2 20                                 MOV DL, 32
+[  85]    0176: CD 21                                 INT 21H
+[  86]        :                                       
+[  87]    0178: B4 02                                 MOV AH, 2   ;star symbol
+[  88]    017A: B2 2A                                 MOV DL, 42
+[  89]    017C: CD 21                                 INT 21H
+[  90]        :                                       
+[  91]    017E: B4 02                                 MOV AH, 2   ;space
+[  92]    0180: B2 20                                 MOV DL, 32
+[  93]    0182: CD 21                                 INT 21H
+[  94]        :                                       
+[  95]    0184: B4 02                                 MOV AH, 2   ;space
+[  96]    0186: B2 20                                 MOV DL, 32
+[  97]    0188: CD 21                                 INT 21H
+[  98]        :                                       
+[  99]    018A: B4 02                                 MOV AH, 2   ;space
+[ 100]    018C: B2 20                                 MOV DL, 32
+[ 101]    018E: CD 21                                 INT 21H
+[ 102]        :                                       
+[ 103]    0190: B4 02                                 MOV AH, 2   ;star symbol
+[ 104]    0192: B2 2A                                 MOV DL, 42
+[ 105]    0194: CD 21                                 INT 21H
+[ 106]        :                                       
+[ 107]    0196: B4 02                                 MOV AH, 2   ;new line
+[ 108]    0198: B2 0A                                 MOV DL, 10
+[ 109]    019A: CD 21                                 INT 21H
+[ 110]        :                                       
+[ 111]    019C: B4 02                                 MOV AH, 2   ;brings pointer to the begining
+[ 112]    019E: B2 0D                                 MOV DL, 13
+[ 113]    01A0: CD 21                                 INT 21H
+[ 114]        :                                       
+[ 115]    01A2: B4 02                                 MOV AH, 2   ;space
+[ 116]    01A4: B2 20                                 MOV DL, 32
+[ 117]    01A6: CD 21                                 INT 21H
+[ 118]        :                                       
+[ 119]    01A8: B4 02                                 MOV AH, 2   ;space
+[ 120]    01AA: B2 20                                 MOV DL, 32
+[ 121]    01AC: CD 21                                 INT 21H
+[ 122]        :                                       
+[ 123]    01AE: B4 02                                 MOV AH, 2   ;star symbol
+[ 124]    01B0: B2 2A                                 MOV DL, 42
+[ 125]    01B2: CD 21                                 INT 21H
+[ 126]        :                                       
+[ 127]    01B4: B4 02                                 MOV AH, 2   ;space
+[ 128]    01B6: B2 20                                 MOV DL, 32
+[ 129]    01B8: CD 21                                 INT 21H
+[ 130]        :                                       
+[ 131]    01BA: B4 02                                 MOV AH, 2   ;space
+[ 132]    01BC: B2 20                                 MOV DL, 32
+[ 133]    01BE: CD 21                                 INT 21H
+[ 134]        :                                       
+[ 135]    01C0: B4 02                                 MOV AH, 2   ;space
+[ 136]    01C2: B2 20                                 MOV DL, 32
+[ 137]    01C4: CD 21                                 INT 21H
+[ 138]        :                                       
+[ 139]    01C6: B4 02                                 MOV AH, 2   ;space
+[ 140]    01C8: B2 20                                 MOV DL, 32
+[ 141]    01CA: CD 21                                 INT 21H
+[ 142]        :                                       
+[ 143]    01CC: B4 02                                 MOV AH, 2   ;space
+[ 144]    01CE: B2 20                                 MOV DL, 32
+[ 145]    01D0: CD 21                                 INT 21H
+[ 146]        :                                       
+[ 147]    01D2: B4 02                                 MOV AH, 2   ;star symbol
+[ 148]    01D4: B2 2A                                 MOV DL, 42
+[ 149]    01D6: CD 21                                 INT 21H
+[ 150]        :                                       
+[ 151]    01D8: B4 02                                 MOV AH, 2   ;new line
+[ 152]    01DA: B2 0A                                 MOV DL, 10
+[ 153]    01DC: CD 21                                 INT 21H
+[ 154]        :                                       
+[ 155]    01DE: B4 02                                 MOV AH, 2   ;brings pointer to the begining
+[ 156]    01E0: B2 0D                                 MOV DL, 13
+[ 157]    01E2: CD 21                                 INT 21H
+[ 158]        :                                       
+[ 159]    01E4: B4 02                                 MOV AH, 2   ;space
+[ 160]    01E6: B2 20                                 MOV DL, 32
+[ 161]    01E8: CD 21                                 INT 21H
+[ 162]        :                                       
+[ 163]    01EA: B4 02                                 MOV AH, 2   ;star symbol
+[ 164]    01EC: B2 2A                                 MOV DL, 42
+[ 165]    01EE: CD 21                                 INT 21H
+[ 166]        :                                       
+[ 167]    01F0: B4 02                                 MOV AH, 2   ;space
+[ 168]    01F2: B2 20                                 MOV DL, 32
+[ 169]    01F4: CD 21                                 INT 21H
+[ 170]        :                                       
+[ 171]    01F6: B4 02                                 MOV AH, 2   ;space
+[ 172]    01F8: B2 20                                 MOV DL, 32
+[ 173]    01FA: CD 21                                 INT 21H
+[ 174]        :                                       
+[ 175]    01FC: B4 02                                 MOV AH, 2   ;space
+[ 176]    01FE: B2 20                                 MOV DL, 32
+[ 177]    0200: CD 21                                 INT 21H
+[ 178]        :                                       
+[ 179]    0202: B4 02                                 MOV AH, 2   ;space
+[ 180]    0204: B2 20                                 MOV DL, 32
+[ 181]    0206: CD 21                                 INT 21H
+[ 182]        :                                       
+[ 183]    0208: B4 02                                 MOV AH, 2   ;space
+[ 184]    020A: B2 20                                 MOV DL, 32
+[ 185]    020C: CD 21                                 INT 21H
+[ 186]        :                                       
+[ 187]    020E: B4 02                                 MOV AH, 2   ;space
+[ 188]    0210: B2 20                                 MOV DL, 32
+[ 189]    0212: CD 21                                 INT 21H
+[ 190]        :                                       
+[ 191]    0214: B4 02                                 MOV AH, 2   ;space
+[ 192]    0216: B2 20                                 MOV DL, 32
+[ 193]    0218: CD 21                                 INT 21H
+[ 194]        :                                       
+[ 195]    021A: B4 02                                 MOV AH, 2   ;star symbol
+[ 196]    021C: B2 2A                                 MOV DL, 42
+[ 197]    021E: CD 21                                 INT 21H
+[ 198]        :                                       
+[ 199]    0220: B4 02                                 MOV AH, 2   ;new line
+[ 200]    0222: B2 0A                                 MOV DL, 10
+[ 201]    0224: CD 21                                 INT 21H
+[ 202]        :                                       
+[ 203]    0226: B4 02                                 MOV AH, 2   ;brings pointer to the begining
+[ 204]    0228: B2 0D                                 MOV DL, 13
+[ 205]    022A: CD 21                                 INT 21H
+[ 206]        :                                       
+[ 207]    022C: B4 02                                 MOV AH, 2   ;space
+[ 208]    022E: B2 20                                 MOV DL, 32
+[ 209]    0230: CD 21                                 INT 21H
+[ 210]        :                                       
+[ 211]    0232: B4 02                                 MOV AH, 2   ;space
+[ 212]    0234: B2 20                                 MOV DL, 32
+[ 213]    0236: CD 21                                 INT 21H
+[ 214]        :                                       
+[ 215]    0238: B4 02                                 MOV AH, 2   ;star symbol
+[ 216]    023A: B2 2A                                 MOV DL, 42
+[ 217]    023C: CD 21                                 INT 21H
+[ 218]        :                                       
+[ 219]    023E: B4 02                                 MOV AH, 2   ;space
+[ 220]    0240: B2 20                                 MOV DL, 32
+[ 221]    0242: CD 21                                 INT 21H
+[ 222]        :                                       
+[ 223]    0244: B4 02                                 MOV AH, 2   ;space
+[ 224]    0246: B2 20                                 MOV DL, 32
+[ 225]    0248: CD 21                                 INT 21H
+[ 226]        :                                       
+[ 227]    024A: B4 02                                 MOV AH, 2   ;space
+[ 228]    024C: B2 20                                 MOV DL, 32
+[ 229]    024E: CD 21                                 INT 21H
+[ 230]        :                                       
+[ 231]    0250: B4 02                                 MOV AH, 2   ;space
+[ 232]    0252: B2 20                                 MOV DL, 32
+[ 233]    0254: CD 21                                 INT 21H
+[ 234]        :                                       
+[ 235]    0256: B4 02                                 MOV AH, 2   ;space
+[ 236]    0258: B2 20                                 MOV DL, 32
+[ 237]    025A: CD 21                                 INT 21H
+[ 238]        :                                       
+[ 239]    025C: B4 02                                 MOV AH, 2   ;star symbol
+[ 240]    025E: B2 2A                                 MOV DL, 42
+[ 241]    0260: CD 21                                 INT 21H
+[ 242]        :                                       
+[ 243]    0262: B4 02                                 MOV AH, 2   ;new line
+[ 244]    0264: B2 0A                                 MOV DL, 10
+[ 245]    0266: CD 21                                 INT 21H
+[ 246]        :                                       
+[ 247]    0268: B4 02                                 MOV AH, 2   ;brings pointer to the begining
+[ 248]    026A: B2 0D                                 MOV DL, 13
+[ 249]    026C: CD 21                                 INT 21H
+[ 250]        :                                       
+[ 251]        :                                       
+[ 252]    026E: B4 02                                 MOV AH, 2   ;space
+[ 253]    0270: B2 20                                 MOV DL, 32
+[ 254]    0272: CD 21                                 INT 21H
+[ 255]        :                                       
+[ 256]    0274: B4 02                                 MOV AH, 2   ;space
+[ 257]    0276: B2 20                                 MOV DL, 32
+[ 258]    0278: CD 21                                 INT 21H
+[ 259]        :                                       
+[ 260]    027A: B4 02                                 MOV AH, 2   ;space
+[ 261]    027C: B2 20                                 MOV DL, 32
+[ 262]    027E: CD 21                                 INT 21H
+[ 263]        :                                       
+[ 264]    0280: B4 02                                 MOV AH, 2   ;star symbol
+[ 265]    0282: B2 2A                                 MOV DL, 42
+[ 266]    0284: CD 21                                 INT 21H
+[ 267]        :                                       
+[ 268]    0286: B4 02                                 MOV AH, 2   ;space
+[ 269]    0288: B2 20                                 MOV DL, 32
+[ 270]    028A: CD 21                                 INT 21H
+[ 271]        :                                       
+[ 272]    028C: B4 02                                 MOV AH, 2   ;space
+[ 273]    028E: B2 20                                 MOV DL, 32
+[ 274]    0290: CD 21                                 INT 21H
+[ 275]        :                                       
+[ 276]    0292: B4 02                                 MOV AH, 2   ;space
+[ 277]    0294: B2 20                                 MOV DL, 32
+[ 278]    0296: CD 21                                 INT 21H
+[ 279]        :                                       
+[ 280]    0298: B4 02                                 MOV AH, 2   ;star symbol
+[ 281]    029A: B2 2A                                 MOV DL, 42
+[ 282]    029C: CD 21                                 INT 21H
+[ 283]        :                                       
+[ 284]    029E: B4 02                                 MOV AH, 2   ;new line
+[ 285]    02A0: B2 0A                                 MOV DL, 10
+[ 286]    02A2: CD 21                                 INT 21H
+[ 287]        :                                       
+[ 288]    02A4: B4 02                                 MOV AH, 2   ;brings pointer to the begining
+[ 289]    02A6: B2 0D                                 MOV DL, 13
+[ 290]    02A8: CD 21                                 INT 21H
+[ 291]        :                                       
+[ 292]    02AA: B4 02                                 MOV AH, 2   ;space
+[ 293]    02AC: B2 20                                 MOV DL, 32
+[ 294]    02AE: CD 21                                 INT 21H
+[ 295]        :                                       
+[ 296]    02B0: B4 02                                 MOV AH, 2   ;space
+[ 297]    02B2: B2 20                                 MOV DL, 32
+[ 298]    02B4: CD 21                                 INT 21H
+[ 299]        :                                       
+[ 300]    02B6: B4 02                                 MOV AH, 2   ;space
+[ 301]    02B8: B2 20                                 MOV DL, 32
+[ 302]    02BA: CD 21                                 INT 21H
+[ 303]        :                                       
+[ 304]    02BC: B4 02                                 MOV AH, 2   ;space
+[ 305]    02BE: B2 20                                 MOV DL, 32
+[ 306]    02C0: CD 21                                 INT 21H
+[ 307]        :                                       
+[ 308]    02C2: B4 02                                 MOV AH, 2   ;star symbol
+[ 309]    02C4: B2 2A                                 MOV DL, 42
+[ 310]    02C6: CD 21                                 INT 21H
+[ 311]        :                                       
+[ 312]    02C8: B4 02                                 MOV AH, 2   ;space
+[ 313]    02CA: B2 20                                 MOV DL, 32
+[ 314]    02CC: CD 21                                 INT 21H
+[ 315]        :                                       
+[ 316]    02CE: B4 02                                 MOV AH, 2   ;star symbol
+[ 317]    02D0: B2 2A                                 MOV DL, 42
+[ 318]    02D2: CD 21                                 INT 21H
+[ 319]        :                                       
+[ 320]    02D4: B4 02                                 MOV AH, 2   ;new line
+[ 321]    02D6: B2 0A                                 MOV DL, 10
+[ 322]    02D8: CD 21                                 INT 21H
+[ 323]        :                                       
+[ 324]    02DA: B4 02                                 MOV AH, 2   ;brings pointer to the begining
+[ 325]    02DC: B2 0D                                 MOV DL, 13
+[ 326]    02DE: CD 21                                 INT 21H
+[ 327]        :                                       
+[ 328]    02E0: B4 02                                 MOV AH, 2   ;space
+[ 329]    02E2: B2 20                                 MOV DL, 32
+[ 330]    02E4: CD 21                                 INT 21H
+[ 331]        :                                       
+[ 332]    02E6: B4 02                                 MOV AH, 2   ;space
+[ 333]    02E8: B2 20                                 MOV DL, 32
+[ 334]    02EA: CD 21                                 INT 21H
+[ 335]        :                                       
+[ 336]    02EC: B4 02                                 MOV AH, 2   ;space
+[ 337]    02EE: B2 20                                 MOV DL, 32
+[ 338]    02F0: CD 21                                 INT 21H
+[ 339]        :                                       
+[ 340]    02F2: B4 02                                 MOV AH, 2   ;space
+[ 341]    02F4: B2 20                                 MOV DL, 32
+[ 342]    02F6: CD 21                                 INT 21H
+[ 343]        :                                       
+[ 344]    02F8: B4 02                                 MOV AH, 2   ;space
+[ 345]    02FA: B2 20                                 MOV DL, 32
+[ 346]    02FC: CD 21                                 INT 21H
+[ 347]        :                                       
+[ 348]    02FE: B4 02                                 MOV AH, 2   ;star symbol
+[ 349]    0300: B2 2A                                 MOV DL, 42
+[ 350]    0302: CD 21                                 INT 21H
+[ 351]        :                                       
+[ 352]    0304: B4 02                                 MOV AH, 2   ;new line
+[ 353]    0306: B2 0A                                 MOV DL, 10
+[ 354]    0308: CD 21                                 INT 21H
+[ 355]        :                                       
+[ 356]    030A: B4 02                                 MOV AH, 2   ;brings pointer to the begining
+[ 357]    030C: B2 0D                                 MOV DL, 13
+[ 358]    030E: CD 21                                 INT 21H
+[ 359]        :                                       
+[ 360]    0310: C3                                    ret
+[ 361]        :                                       
+[ 362]        :                                       
+[ 363]        :                                       
+[ 364]        :                                       
+[ 365]        :                                       
+[ 366]        :                                       
+ 
+===================================================================================================
+ 
+
+
+
+
+===================================================================================================
